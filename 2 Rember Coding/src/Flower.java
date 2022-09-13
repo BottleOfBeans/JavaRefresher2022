@@ -1,53 +1,55 @@
-
-/**
- * A Flower has a type (represented by a String) and a price (double)
- *
- *
- * It has two constructors:
- *
- * Flower(name, price) - sets the name and price to the parameters
- *
- * Flower(name) - sets the name to the parameter, and the price to 5
- *
- *
- * It has the following methods:
- *
- * double price() - returns the price of the Flower
- *
- * String name() - returns the name of the Flower
- *
- * boolean setPrice(double newPrice) - updates the price of the 
- *                  Flower to newPrice and returns true
- *                  ONLY if newPrice is positive
- *                  otherwise return false
- *
- * String toString() - returns a String in the following format:
- *                     "Flower Name: Tulip, Price: $5.0"
- */
-
+//We doing it on that working grindset
 public class Flower {
+    /**
+     * name is the name of the flower it is inputted when called
+     *price is the price of the flower it is defaulted at 0 but can be set
+     */
     public String name;
     public double price;
 
+    /**
+     * Setting it all up
+     * @param gname input name
+     * @param gprice input price
+     */
     public Flower(String gname, double gprice) {
         name = gname;
         price = gprice;
     }
+
+    /**
+     * Setting it up without price -> default is 0
+     * @param gname input name
+     */
     public Flower(String gname){
         name = gname;
         price = 5;
     }
-    public String Flower(){
-        return "Flower  Name: "+name+", Price: $"+price;
-    }
 
+    /**
+     * Returning the price when asked
+     * @return
+     */
     public double price(){
         return price;
     }
+
+    /**
+     * Returning the name when asked
+     * @return
+     */
     public String name(){
         return name;
     }
 
+    /**
+     * updates the price of the
+     * Flower to newPrice and returns true
+     * ONLY if newPrice is positive
+     * otherwise return false
+     * @param newPrice the new price that it should be set too
+     * @return
+     */
     public boolean setPrice(double newPrice){
         if(newPrice >= 0){
             price = newPrice;
@@ -58,6 +60,12 @@ public class Flower {
             return true;
         }
     }
+
+    /**
+     * returns a String in the following format:
+     * ex: "Flower Name: Tulip, Price: $5.0"
+     * @return
+     */
     public String toString(){
         return "Flower  Name: "+name+", Price: $"+price;
     }
