@@ -67,7 +67,7 @@ public class Flower {
      * @return
      */
     public String toString(){
-        return "Flower  Name: "+name+", Price: $"+price;
+        return "\nFlower  Name: "+name+", Price: $"+price;
     }
 
 }

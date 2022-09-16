@@ -43,7 +43,7 @@ public class Main
 
        System.out.println("\nTEST 5");
        fw.remove("Dandelion");
-       System.out.println(fw);
+       System.out.println("\n+"+fw);
 
     }
 }
